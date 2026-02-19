@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Money Muling Detection Engine</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
+<body>
+
+<h1>💰 Financial Crime Detection Engine</h1>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Upload CSV</h2>
+        <input type="file" id="csvFile">
+        <button onclick="uploadCSV()">Analyze CSV</button>
+    </div>
+
+    <div class="card">
+        <h2>Manual Transaction Entry</h2>
+        <input id="sender" placeholder="Sender ID">
+        <input id="receiver" placeholder="Receiver ID">
+        <button onclick="addTransaction()">Add</button>
+        <button onclick="analyzeManual()">Analyze Manual Data</button>
+    </div>
+
+    <div class="card">
+        <h2>Graph Visualization</h2>
+        <div id="network"></div>
+    </div>
+
+    <div class="card">
+        <h2>Fraud Rings</h2>
+        <div id="fraudTable"></div>
+    </div>
+
+    <button onclick="downloadJSON()">Download JSON</button>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
