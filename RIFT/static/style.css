@@ -1,0 +1,23 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #1f4037, #99f2c8);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.card {
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#network {
+    height: 400px;
+    background: white;
+}
